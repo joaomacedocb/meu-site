@@ -67,21 +67,40 @@
             margin-bottom: 40px;
         }
 
+        section#sobre {
+            padding: 5rem 0 0 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: auto;
+            /* Centraliza a seção na página */
+            /* Adiciona um espaçamento interno */
+        }
+
+        section#sobre img {
+            width: 150px;
+            height: 150px;
+            /* Define um tamanho fixo para a imagem */
+            border-radius: 50%;
+            /* Deixa a imagem arredondada */
+            margin: 10px 0;
+            object-fit: cover;
+            /* Espaçamento entre a imagem e o texto */
+        }
+
+        section#sobre p {
+            padding: 10px;
+            /* Limita a largura do texto para melhor leitura */
+        }
+
         /* Pequeno efeito de borda retro */
         section h1 {
             border-bottom: 3px solid #00ff99;
             display: inline-block;
             padding-bottom: 5px;
             margin-bottom: 40px;
-        }
-
-        /* Seção "Quem eu sou" */
-        #sobre img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            margin-bottom: 20px;
+            text-align: center;
         }
 
         /* Carrossel de Projetos */
@@ -131,7 +150,7 @@
                 padding: 60px 30px;
             }
 
-            #sobre {
+            section #sobre {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -348,6 +367,7 @@
             sendo os últimos 3 anos focado em programação full stack. Aqui você encontra alguns projetos e informações.
             Boas-vindas!</p>
     </section>
+    <div class="aviao"></div>
 
     <section id="projetos">
         <h1>Projetos</h1>
@@ -384,7 +404,8 @@
         </div>
         <div class="projeto">
             <h2>Trackbase</h2>
-            <p>Se trata de uma API desenvolvida em Django Rest Framework que suporta o gerenciamento de músicas. Contando com
+            <p>Se trata de uma API desenvolvida em Django Rest Framework que suporta o gerenciamento de músicas.
+                Contando com
                 endpoints para ler, editar, inserir e deletar músicas, artistas, albuns, playlist e gerenciar usuários.
             </p>
             <div class="swiper">
